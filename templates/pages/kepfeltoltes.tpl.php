@@ -19,6 +19,7 @@ foreach($kepek as $fajl => $datum)
 <?php
 }
 ?>
+<?php if(isset($_SESSION['login'])) { ?>
 <h1>Feltöltés a galériába:</h1>
 <?php
     if (!empty($uzenet))
@@ -37,6 +38,7 @@ foreach($kepek as $fajl => $datum)
          
         <input type="submit" name="kuld">
       </form>    
+<?php } ?>    
 </body>
 
 
